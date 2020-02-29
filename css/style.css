@@ -1,0 +1,181 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.navbar{
+    background-color: #f6f6f6;
+}
+
+#hero{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    height: 380px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/*  ---------------------------- h1 media queries ---------------------------- */
+@media(max-width: 992px) {
+    h1 { 
+        font-size: 3rem!important;
+    }
+}
+
+@media(max-width: 768px) {
+    h1 { 
+        font-size: 2.5rem!important;
+    }
+}
+
+@media(max-width: 576px) {
+    h1 { 
+        font-size: 2rem!important;
+    }
+}
+/*  ---------------------------------------------------------------------------- */
+
+
+/*  ---------------------------- CMD Simulation ---------------------------- */
+#cmd {
+    background-color:#0e1419;
+    width:auto;
+    font-family: 'Ubuntu Mono';
+    border-radius: 15px;
+}
+
+p.cmd-p {
+    color:#bf00bf;
+}
+
+p.cmd-g{
+    color:#bfbf00;
+}
+
+@media(min-width: 992px) {
+    #cmd {
+        width:60%;
+    }
+}
+
+/*  ---------------------------------------------------------------------------- */
+
+ul {
+    list-style-type: none;
+}
+
+#documentation{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    height: 250px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+/*  ---------------------------- Social Links ---------------------------- */
+a{
+    text-decoration: none!important;
+}
+
+i{
+    transition: 0.3s;
+}
+
+.fa-github{
+    color: #41464a;
+}
+.fa-github:hover{
+    color: #21282e;
+}
+
+.fa-slack-hash{
+    color: #6b1a67;
+}
+.fa-slack-hash:hover{
+    color: #511048;
+}
+
+.fa-telegram{
+    color: #4283a3;
+}
+.fa-telegram:hover{
+    color: #3e6c83;
+}
+
+.fa-twitter{
+    color: #05a3ed;
+}
+.fa-twitter:hover{
+    color: #0093d9;
+}
+
+@media(max-width: 359px) {
+    i.fab {
+        font-size: 3rem!important;
+    }
+}
+
+/*  ---------------------------------------------------------------------------- */
+
+footer{
+    background-color: #f6f6f6; 
+}
+
+/*  ---------------------------- Reduce navbar ---------------------------- */
+
+.h-30{
+    height: 30px!important;
+}
+
+.img-brand{
+    transition: ease-in-out .3s;
+}
+
+/*  ---------------------------- Language icons ---------------------------- */
+
+@media(max-width: 1200px) and (min-width: 992px) {
+    .lang-icon{
+        width: 30px;
+    }
+}
+
+
+@media(max-width: 359px) {
+    .lang-icon{
+        width: 30px;
+    }
+}
+
+/*  ---------------------------- Orange ---------------------------- */
+
+hr{
+    height: 1.5px!important;
+    background-color: #ff8717;
+    border: none;
+}
+
+.btn-primary{
+    background-color: #ff8717!important;
+    border-color: #ff8717!important;
+}
+
+.btn-primary:hover{
+    background-color: #e24234!important;
+    border-color: #e24234!important;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #e24234!important;
+    border-color: #e24234!important;
+}
+
+.nav-link{
+    color: #ff8717!important;
+}
+
+.nav-link:hover{
+    color: #e24234!important;
+}

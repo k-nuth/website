@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="High performance Bitcoin development platform">
+    <title>Knuth | Multri-Crypto Full Node</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icon.png">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- CLI font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/086597c03d.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- ClipboardJs -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+</head>
+<body>
+    
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 fixed-top">
+            <a class="navbar-brand" href="#header"><img class="img-brand" src="./img/logo.png" alt="Knuth" height="40"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contribute">Contribute</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#documentation">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="hero" class="container-fluid mt-5">
+        <div class="container pt-4">
+            <h1 class="text-center pt-5 display-4"><b>High performance Bitcoin<br>development platform</b></h1>
+            <div class="pt-5 text-center">
+                <a href="#download" class="btn btn-primary btn-lg">DOWNLOAD</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-12 col-lg-8 offset-lg-2 pt-3">
+            <h4 class="text-center pt-4">Why Knuth?</h4>
+            <p class="pt-4 text-center pb-3">Knuth is a high performance implementation of the Bitcoin protocol focused on users requiring extra performance and flexibility, what makes it the best platform for wallets, exchanges, block explorers and miners.</p>
+            <hr class="w-25">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-12 col-lg-8 offset-lg-2 pt-3">
+            <h4 class="text-center pt-4">Multiple cryptos</h4>
+            <p class="pt-4 text-center">Knuth supports <b>Bitcoin</b>, <b>Litecoin</b> and <b>Bitcoin Cash</b> in the same code base</p>
+            <div class="text-center pb-2">
+                <img src="./img/icons/bitcoincash.svg" alt="bitcoin-cash" width="50">
+                <img class="ml-3" src="./img/icons/litecoin.svg" alt="litecoin" width="50">
+                <img class="ml-3" src="./img/icons/bitcoin.svg" alt="bitcoin" width="50">
+            </div>
+            <p class="text-center pb-3">Choosing a cryptocurrency is just as simple as changing a switch in our build system. Also, given its modular design and beautiful code, Knuth allows you to implement other cryptocurrencies with very few code changes.</p>
+            <hr class="w-25">
+        </div>
+    </div>
+
+    <div class="container pt-4" id="features">
+        <div class="row">
+            <div class="col-12 col-lg-6 pt-5">
+                <div class="text-center col-12 col-lg-8 offset-lg-2">
+                    <img src="./img/icons/performance.svg" alt="performance" >
+                    
+                    <h5 class="py-3">Performance matters</h5>
+                    <p class="text-center text-lg-left">We designed Knuth to be a high performance node, so our build system has the ability to automatically detect the microarchitecture of your processor and perform an optimized build for it.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-5">
+                <div class="text-center col-12 col-lg-8 offset-lg-2">
+                    <img src="./img/icons/cross.svg" alt="cross-platform" width="60">
+                    <h5 class="py-3">Cross-platform</h5>
+                    <p class="text-center text-lg-left">Knuth can be used in any operating system and computer architecture.
+                    It has been well tested on x86-64 processors and on the following operating systems: FreeBSD, Linux, macOS and Windows.</p>
+                </div>
+            </div>
+        </div><!-- .row -->
+        <div class="row">
+            <div class="col-12 col-lg-6 pt-5">
+                <div class="text-center col-12 col-lg-8 offset-lg-2">
+                    <img src="./img/icons/architecture.svg" alt="architecture" width="60">
+                    <h5 class="py-3">Modular architecture</h5>
+                    <p class="text-center text-lg-left">Knuth is based on a modular architecture simple to modify, expand and learn. Any protocol change can be introduced in Knuth much faster and more efficiently than in reference implementations.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-5 pb-4">
+                <div class="text-center col-12 col-lg-8 offset-lg-2">
+                    <img src="./img/icons/gear.svg" alt="node" width="60">
+                    <h5 class="py-3">Not just a node</h5>
+                    <p class="text-center text-lg-left">Knuth's core is written in C++17, on top of it we provide a set of libraries and modules written in various programming languages that you can use as basis for building your application.
+                    <div class="mr-0 mr-lg-4">
+                        <img src="./img/icons/python.svg" alt="Python" width="40">
+                        <img class=" lang-icon" src="./img/icons/javascript.svg" alt="Javascript" width="40">
+                        <img class=" lang-icon" src="./img/icons/golang.svg" alt="GoLang" width="40">
+                        <img class=" lang-icon" src="./img/icons/CSharp.svg" alt="CSharp" width="40">
+                        <img class=" lang-icon" src="./img/icons/Cpp.svg" alt="cpp" width="40">
+                        <img class="lang-icon" src="./img/icons/C.svg" alt="Cprogramming" width="40">
+                    </div>
+                </div>
+            </div>
+            <hr class="w-25 mb-2 mt-4">
+        </div><!-- .row -->
+    </div><!-- .container -->
+
+    <div class="container pt-5 text-center pb-2" id="download">
+        <h3 class="pb-4">Getting started</h3>
+        <p class="pb-4">Install and run Knuth is very easy, you must follow these instructions.</p>
+        <p><b>1. Install and configure the Knuth build helper:</b></p>
+        <div class="container text-left" id="cmd">
+            <p class="cmd-g pt-3">$ pip install kthbuild --user --upgrade</p>
+            <p class="cmd-g pb-3">$ conan remote add kth https://api.bintray.com/conan/k-nuth/kth</p>
+        </div>
+        <p class="pt-4"><b>2. Install the appropriate node executable:</b></p>
+        <div class="container text-left" id="cmd">
+            <p class="cmd-p pt-3"># For Bitcoin Cash (default)</p>
+            <p class="cmd-g pb-4">$ conan install kth/0.X@kth/stable -o currency=BCH</p>
+            <p class="cmd-p pt-3"># For Bitcoin</p>
+            <p class="cmd-g pb-4">$ conan install kth/0.X@kth/stable -o currency=BTC</p>
+            <p class="cmd-p pt-3"># For Litecoin</p>
+            <p class="cmd-g pb-3">$ conan install kth/0.X@kth/stable -o currency=LTC</p>
+            <p class="cmd-p pt-3 pb-3"># (0.X is an alias for our latest uploaded package)</p>
+        </div>
+        
+        <p class="pt-4"><b>3. Run the node:</b></p>
+        <div class="container text-left" id="cmd">
+            <p class="cmd-p pt-3"># Initialize the database</p>
+            <p class="cmd-g pb-4">$ ./kth -i</p>
+            <p class="cmd-p pt-3"># Run the node</p>
+            <p class="cmd-g pb-3">$ ./kth</p>
+        </div>
+    </div><!-- .container -->
+
+    <div class="container-fluid py-5 mt-5 mb-3" id="documentation">
+        <h4 class="text-center">READY TO START BUILDING? READ THE DOCS!</h4>
+        <div class="pt-5 text-center">
+            <a class="btn btn-primary btn-lg" href="http://kth.cash/docs/">DOCUMENTATION</a>
+        </div>
+    </div>
+
+    <div class="container text-center py-5" id="contact">
+        <a href="https://github.com/k-nuth">
+            <i class="fab fa-github" style="font-size: 4rem;"></i>
+        </a>
+        <a class="pl-4" href="#">
+            <i class="fab fa-slack-hash" style="font-size: 4rem;"></i>
+        </a>
+        <a class="pl-4" href="https://t.me/knuth_cash">
+            <i class="fab fab fa-telegram" style="font-size: 4rem;"></i>
+        </a>
+        <a class="pl-4" href="#">
+            <i class="fab fa-twitter" style="font-size: 4rem;"></i>
+        </a>
+    </div>
+
+    <div class="container py-4" id="contribute">
+            <div class="row">
+            <div class="col-12 col-lg-3 offset-lg-1 text-center text-lg-right">
+                <img src="./img/donate-qr.svg" alt="qr-code" width="200">
+            </div>
+            <div class="col-12 col-lg-6">
+                <h5 class="pt-4 text-center text-lg-left">
+                    If you'd like to help fund our efforts you can send Bitcoin Cash to the address below.
+                </h5>
+                <div class="input-group mb-3 mt-5">
+                    <input type="text" class="form-control" name="address" id="address"  value="qrlgfg2qkj3na2x9k7frvcmv06ljx5xlnuuwx95zfn" readonly>
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="copy-btn" data-clipboard-target="#address">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="text-center py-3">
+            <small>Copyright © <script>document.write(new Date().getFullYear())</script>, Knuth Project</small> 
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- Copy to clipboard -->
+<script>
+    new ClipboardJS('#copy-btn');
+</script>
+
+<!-- Smooth Scrolling -->
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+        } // End if
+        });
+    });
+</script>
+
+<!-- Reduce navbar on scroll -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.img-brand').addClass('h-30');
+        } else {
+            $('.img-brand').removeClass('h-30');
+        }
+    });
+</script>
