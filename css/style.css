@@ -35,8 +35,6 @@ html {
         font-size: 2rem!important;
     }
 }
-/*  ---------------------------------------------------------------------------- */
-
 
 /*  ---------------------------- CMD Simulation ---------------------------- */
 #cmd {
@@ -149,6 +147,11 @@ footer{
     }
 }
 
+.card { position: relative; }
+.card-img-top img { display: block; }
+.icons-container { position: absolute; bottom:1; right:0; }
+
+
 /*  ---------------------------- Orange ---------------------------- */
 
 hr{
@@ -178,4 +181,15 @@ hr{
 
 .nav-link:hover{
     color: #e24234!important;
+}
+/*  ---------------------------------------------------------------------------- */
+
+.card-img-top {
+    width: 100%;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.navbar-toggler:focus {
+    outline: none;
 }

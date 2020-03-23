@@ -39,16 +39,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#download">Download</a>
+                        <a class="nav-link" href="#features" data-toggle="collapse" data-target=".navbar-collapse.show">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#download" data-toggle="collapse" data-target=".navbar-collapse.show">Download</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contribute">Contribute</a>
+                        <a class="nav-link" href="#documentation" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#documentation">Contact</a>
+                        <a class="nav-link" href="#contribute" data-toggle="collapse" data-target=".navbar-collapse.show">Contribute</a>
                     </li>
                 </ul>
             </div>
@@ -89,42 +89,65 @@
     <div class="container pt-4" id="features">
         <div class="row">
             <div class="col-12 col-lg-6 pt-5">
-                <div class="text-center col-12 col-lg-8 offset-lg-2">
-                    <img src="./img/icons/performance.svg" alt="performance" >
-                    
-                    <h5 class="py-3">Performance matters</h5>
-                    <p class="text-center text-lg-left">We designed Knuth to be a high performance node, so our build system has the ability to automatically detect the microarchitecture of your processor and perform an optimized build for it.</p>
+                <div class="card">
+                    <img class="card-img-top" src="img/micro.jpg" alt="microprocessor">
+                    <div class="card-body">
+                        <h5 class="text-center pb-3">Performance matters</h5>
+                        <p class="card-text text-center">We designed Knuth to be a high performance node, so our build system has the ability to automatically detect the microarchitecture of your processor and perform an optimized build for it.</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6 pt-5">
-                <div class="text-center col-12 col-lg-8 offset-lg-2">
-                    <img src="./img/icons/cross.svg" alt="cross-platform" width="60">
-                    <h5 class="py-3">Cross-platform</h5>
-                    <p class="text-center text-lg-left">Knuth can be used in any operating system and computer architecture.
-                    It has been well tested on x86-64 processors and on the following operating systems: FreeBSD, Linux, macOS and Windows.</p>
+                <div class="card">
+                    <img class="card-img-top" src="img/cross-platform.jpg" alt="microprocessor">
+                    <div class="card-body">
+                        <h5 class="text-center pb-3">Cross-platform</h5>
+                        <p class="card-text text-center">Knuth can be used in any operating system and computer architecture. It has been well tested on x86-64 processors and on the following operating systems: FreeBSD, Linux, macOS and Windows.</p>
+                    </div>
                 </div>
             </div>
         </div><!-- .row -->
         <div class="row">
             <div class="col-12 col-lg-6 pt-5">
-                <div class="text-center col-12 col-lg-8 offset-lg-2">
-                    <img src="./img/icons/architecture.svg" alt="architecture" width="60">
-                    <h5 class="py-3">Modular architecture</h5>
-                    <p class="text-center text-lg-left">Knuth is based on a modular architecture simple to modify, expand and learn. Any protocol change can be introduced in Knuth much faster and more efficiently than in reference implementations.</p>
+                <div class="card">
+                    <img class="card-img-top" src="img/modular.jpg" alt="microprocessor">
+                    <div class="card-body">
+                        <h5 class="text-center pb-3">Modular architecture</h5>
+                        <p class="card-text text-center">Knuth is based on a modular architecture simple to modify, expand and learn. Any protocol change can be introduced in Knuth much faster and more efficiently than in reference implementations.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 pt-5 pb-4">
-                <div class="text-center col-12 col-lg-8 offset-lg-2">
-                    <img src="./img/icons/gear.svg" alt="node" width="60">
-                    <h5 class="py-3">Not just a node</h5>
-                    <p class="text-center text-lg-left">Knuth's core is written in C++17, on top of it we provide a set of libraries and modules written in various programming languages that you can use as basis for building your application.
-                    <div class="mr-0 mr-lg-4">
+            <div class="col-12 col-lg-6 pt-5 d-block d-lg-none">
+                <div class="card">
+                    <img class="card-img-top" src="img/code.jpg" alt="microprocessor">
+                    <div class="card-body">
+                        <h5 class="text-center pb-3">Not just a node</h5>
+                        <p class="card-text text-center">Knuth's core is written in C++17, on top of it we provide a set of libraries and modules written in various programming languages that you can use as basis for building your application.</p>
+                        <div class="text-center">
+                            <img src="./img/icons/python.svg" alt="Python" width="40">
+                            <img class=" lang-icon" src="./img/icons/javascript.svg" alt="Javascript" width="30">
+                            <img class=" lang-icon" src="./img/icons/golang.svg" alt="GoLang" width="30">
+                            <img class=" lang-icon" src="./img/icons/CSharp.svg" alt="CSharp" width="30">
+                            <img class=" lang-icon" src="./img/icons/Cpp.svg" alt="cpp" width="30">
+                            <img class="lang-icon" src="./img/icons/C.svg" alt="Cprogramming" width="30">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-5 d-none d-lg-block pb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/code.jpg" alt="microprocessor">
+                    <div class="icons-container pr-2 pt-1">
                         <img src="./img/icons/python.svg" alt="Python" width="40">
-                        <img class=" lang-icon" src="./img/icons/javascript.svg" alt="Javascript" width="40">
-                        <img class=" lang-icon" src="./img/icons/golang.svg" alt="GoLang" width="40">
-                        <img class=" lang-icon" src="./img/icons/CSharp.svg" alt="CSharp" width="40">
-                        <img class=" lang-icon" src="./img/icons/Cpp.svg" alt="cpp" width="40">
-                        <img class="lang-icon" src="./img/icons/C.svg" alt="Cprogramming" width="40">
+                        <img class=" lang-icon" src="./img/icons/javascript.svg" alt="Javascript" width="30">
+                        <img class=" lang-icon" src="./img/icons/golang.svg" alt="GoLang" width="30">
+                        <img class=" lang-icon" src="./img/icons/CSharp.svg" alt="CSharp" width="30">
+                        <img class=" lang-icon" src="./img/icons/Cpp.svg" alt="cpp" width="30">
+                        <img class="lang-icon" src="./img/icons/C.svg" alt="Cprogramming" width="30">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="text-center pb-3">Not just a node</h5>
+                        <p class="card-text text-center">Knuth's core is written in C++17, on top of it we provide a set of libraries and modules written in various programming languages that you can use as basis for building your application.</p>
                     </div>
                 </div>
             </div>
