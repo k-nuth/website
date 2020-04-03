@@ -32,11 +32,13 @@
     
     <header>
         <nav class="navbar navbar-expand-lg navbar-light px-4 fixed-top">
-            <a class="navbar-brand" href="#top"><img class="img-brand" src="./img/logo.png" alt="Knuth" height="40"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#top" data-toggle="collapse" data-target=".navbar-collapse.show"><img class="img-brand" src="./img/logo.png" alt="Knuth" height="40"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>				
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#features" data-toggle="collapse" data-target=".navbar-collapse.show">Features</a>
@@ -240,27 +242,19 @@
 <!-- Smooth Scrolling -->
 <script>
     $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
+        $("a").on('click', function(event) {
         if (this.hash !== "") {
-            // Prevent default anchor click behavior
             event.preventDefault();
 
-            // Store hash
             var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
             scrollTop: $(hash).offset().top
             }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
             });
-        } // End if
+        }
         });
     });
 </script>
