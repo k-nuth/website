@@ -1,2 +1,2 @@
 # Knuth website
-View live demo: https://upbeat-noyce-e0b998.netlify.com
+View live demo: https://quizzical-meninsky-9dfb70.netlify.com
