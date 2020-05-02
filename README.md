@@ -1,2 +1,2 @@
 # Knuth website
-View live demo: https://eager-nobel-35ea98.netlify.com
+View live demo: https://agitated-joliot-1b3265.netlify.app
