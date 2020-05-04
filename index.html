@@ -69,13 +69,13 @@
         <div class="info-container">
             <p>Knuth is a high performance implementation of the Bitcoin protocol focused on users requiring extra capacity and resilience. It is a full node software client, but also a development platform. It is designed for:
             </p>
-            <ol>
+            <ul>
                 <li>Miners and mining pools running competitive operations.</li>
                 <li>Exchanges in need of dependable full indexation.</li>
                 <li>Companies and businesses with the intention of building applications.</li>
                 <li>Developers who want to take their projects to new levels.</li>
                 <li>Newcomers taking their first steps in the blockchain ecosystem.</li>
-            </ol>
+            </ul>
         </div>
     </div>
     <section id="download">
@@ -299,7 +299,12 @@
 <!-- Navbar change color on scroll -->
 <script>
     $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 400); 
+        if(window.matchMedia("(max-width: 992px)").matches){
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 270); 
+        } else{
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 350); 
+        }
+        
     }); 
 </script>
 
